@@ -20,11 +20,57 @@ h2 { margin: 0px;}
 .Title-name {text-align: center; height: 250px; padding-top: 10%;}
 .tab {min-height: 500px; overflow: auto; background: blanchedalmond; padding: 20px ; display: none;}
 
-/* Footer CSS */
-
-
-
-@media screen and (max-width: 700px){
-.Nav { flex-direction: column; }
-.Title-name {padding-top: 30%;}
+/* Tab 1 CSS */
+.content form .user-details { display: flex ; flex-wrap: wrap; justify-content: space-between;}
+.content form .input-div { width: calc(100% / 2 - 20px); margin-bottom: 15px;}
+.content form .input-div .details {font-weight: bold; font-size: 18px; }
+.content form .user-details .input-div input {  
+    height: 30px;
+    width: 92%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    font-size: 15px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
 }
+
+.content form .user-details .input-div input:focus ,
+.content form .user-details .input-div input:valid{
+    border-color: #00af05;
+}
+
+.content form .user-details .input-div select {
+    height: 30px;
+    width: 50%;
+    transition: all 0.3s ease;
+    font-size: 14px;
+    padding-left: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-bottom-width: 2px;
+}
+
+.content form .user-details .input-div select:focus , .content form .user-details .input-div select:valid
+ {border-color: #00af05;}
+ .content form .user-details .input-div select:invalid {border-color: #ccc;}
+
+.user-details .input-div input[type='radio']{
+    display: none;
+}
+
+
+
+
+
+
+/* Screen resolution change */
+@media screen and (max-width: 700px){
+    .Nav { flex-direction: column; }
+    .Title-name {padding-top: 30%;}
+    .content form .input-div { width: calc(100% - 20px); margin-bottom: 15px;}
+    .content form {display: flex;}
+    }
+    
