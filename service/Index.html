@@ -61,16 +61,16 @@
                         <select name="type" id="type" required > </select>
                     </div>
                     <div class="input-div" >
-                        <input type="radio" name="warranty_type" id="dot-1">
-                        <input type="radio" name="warranty_type" id="dot-2" >
+                        <input type="radio" class="radiobtn" name="warranty_type" id="dot1" required>
+                        <input type="radio" class="radiobtn" name="warranty_type" id="dot2" >
                         <span class="details">Warranty Type</span><br>
                            <div class="category">
-                            <label for="dot-1">
+                            <label for="dot1">
                                 <span class="dot one"></span>
                                 <span class="warranty_type">Warranty</span>
                             </label>
-                            <label for="dot-2">
-                                <span class="dot one"></span>
+                            <label for="dot2">
+                                <span class="dot two"></span>
                                 <span class="warranty_type">Non Warranty</span>
                             </label>
                            </div>
@@ -87,6 +87,15 @@
                         <span class="details" for="pageCount">Page Count</span><br>
                         <input type="text" name="pageCount" id="pageCount" placeholder="Enter Page Count" required> 
                     </div>
+                    <div class="input-div" >
+                        <span class="details" for="inks">Ink Content % (Min-0 , Max-100)</span><br>
+                        <input type="number" name="inks" id="black" placeholder="BK" min="0" max="100" style="border-color: black;" required> 
+                        <input type="number" name="inks" id="cyan" placeholder="C" min="0" max="100" style="border-color: cyan;" required> 
+                        <input type="number" name="inks" id="magenta" placeholder="M" min="0" max="100"  style="border-color: magenta;" required> 
+                        <input type="number" name="inks" id="yellow" placeholder="Y" min="0" max="100"  style="border-color: yellow;" required> 
+                        <input type="number" name="inks" id="light_magenta" placeholder="LM" min="0" max="100"  style="border-color: lightpink;"  required> 
+                        <input type="number" name="inks" id="light_cyan" placeholder="LC" min="0" max="100"  style="border-color: lightblue;" required> 
+                    </div>
                   
                     <div class="input-div" >
                         <span class="details" for="problem">Problem</span><br>
@@ -96,7 +105,7 @@
                         <span class="details" for="note">Note</span><br>
                         <textarea name="note" id="note" cols="50" rows="5" placeholder="Enter note" ></textarea> 
                     </div>
-                </div>
+                </div><br>
                 <div class="button">
                     <input type="submit" value="Save">
                     <input type="reset" value="Clear">
