@@ -36,8 +36,8 @@ h2 { margin: 0px;}
     transition: all 0.3s ease;
 }
 
-.content form .user-details .input-div input:focus ,
-.content form .user-details .input-div input:valid{
+.content form .user-details .input-div input[type='text']:focus ,
+.content form .user-details .input-div input[type='text']:valid{
     border-color: #00af05;
 }
 
@@ -58,8 +58,28 @@ h2 { margin: 0px;}
  .content form .user-details .input-div select:invalid {border-color: #ccc;}
 
 .user-details .input-div input[type='radio']{
-    display: none;
+    /* display: none; */
 }
+.input-div .category { 
+    width: 90%;
+    background: red;
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin: 5px 0px;}
+
+.user-details .input-div label {cursor: pointer; margin-right: 15%;  margin-left: 5%; display: flex;     align-items: center;}
+.user-details .input-div label .dot { 
+    width: 14px;
+    height: 14px;
+    background: white;
+    /* display: inline-flex; */
+    border-radius: 50%;
+    border: 4px solid transparent;
+    margin-right: 10px;
+    margin-left: 15px;
+}
+
+input:checked ~ .one {background: #1d1d1d;}
 
 
 
