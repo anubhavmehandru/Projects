@@ -1,0 +1,50 @@
+/* %;
+    Document   : mystyle.css
+    Created on : Nov 28, 2013, 11:29:15 AM
+    Author     : Gagan
+    Description:
+        Purpose of the stylesheet follows.
+*/
+root { 
+    display: block;
+}
+.checkbox label input[type=checkbox]{
+    border:3px solid red;
+    padding:8px;
+}
+.con{
+    margin-bottom: 40px;
+}
+.tables td{
+    max-width:150px;
+    overflow:hidden;
+    
+}
+.tool th{
+        padding:5px;
+}
+.control-label{
+        font-weight:normal;
+        font-size:12px;
+}
+.search{
+    border-bottom: 1px solid lightgray;
+}
+.table{
+    font-size:11px;
+    font-family:verdana;
+}
+.table tr td:last-child{
+        width:130px;
+}
+.com{
+    background-color:#428bca;
+    border-radius:5px;
+    color:#428bca;
+    margin-left:15px;
+}
+.lb .col-xs-2 {
+    margin-left:15px;
+    text-align:center;
+    
+}
