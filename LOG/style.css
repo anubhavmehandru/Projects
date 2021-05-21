@@ -1,0 +1,42 @@
+body{padding:0px ; margin:0px ; background: linear-gradient(135deg , #5263a5 , #77c1f5)}
+
+.Top-Menu { width:100% ; background:white ; padding:0px ; margin:0px ;}
+.menu-nav {    display: inline-block ; margin: auto;     padding: 0px;cursor: pointer;}
+.menu-nav li {    list-style: none;    display: inline-block;    text-align: center;    width: 100px;    padding: 10px;}
+.menu-nav li:hover { background:#e58666; color:white}
+.sub-menu-nav {    position: absolute;    background: white; display:none ;     margin-top: 10px;    margin-left: -10px;}
+.sub-menu-nav ul li {display:block ; color:black ;}
+.sub-menu-nav ul {    padding: 0px}
+.menu-nav li:hover .sub-menu-nav {display: block;    position: absolute;    background: whitesmoke;}
+.sub-menu-nav ul li:hover {background:#7C9AB7}
+.right-nav {float:right}
+
+.page {position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; 
+        background-color: rgba(0,0,0,0.4); padding-top: 60px; }
+
+.page-content {background-color: #fefefe; margin: -3% auto 15% auto; border: 1px solid #888;
+              width: 50%; height: auto; }
+
+.field {width: 100%; padding: 12px 20px; margin: 8px 0;
+     display: inline-block; border: 1px solid #ccc; box-sizing: border-box}
+      
+button {background-color: #4CAF50; color: white; padding: 14px 20px; margin: 8px 0; border: none;
+        cursor: pointer; width: 100%;}
+      
+button:hover { opacity: 0.8; }
+      
+.cancelbtn { width: auto; padding: 10px 18px; background-color: #f44336; }
+         
+.imgcontainer {text-align: center; margin: 24px 0 12px 0; position: relative;}
+      
+.full-logo { width: 40%; border-radius: 0; }
+      
+.container {padding: 16px; margin-top:34px;}
+
+span.link {float: right; padding-top: 16px;}
+span.link a {text-decoration: none;}
+
+.show {display: block;}
+.hide {display: none;}
+
+.errorLogin {background: #ff9b93; border:1px solid #f44336;}

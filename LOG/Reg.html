@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Registeration</title>
+        <link rel="icon" href="Phenix.ico">
+        <script  src="https://code.jquery.com/jquery-3.6.0.js"  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="  crossorigin="anonymous"></script>
+        <script src="validation.js"></script>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script src="DB/SqlConnection.java"></script>
+    </head>
+    <body>
+        <div class='Top-Menu'> 
+            <ul class='menu-nav'>
+               <li> Home </li>
+               <li> Products 
+                  <div class='sub-menu-nav'> 
+                     <ul>
+                        <li>Epson</li>
+                        <li>Essae</li>
+                        <li>Honeywell</li>
+                     </ul>
+                  </div>
+               </li>
+               <li> About us </li>
+               <li> Contact us </li>
+            </ul>
+            <ul class='menu-nav right-nav'>
+                <li id="Signin-btn"> Sign In </li>
+                <li id="Login-btn"> Log In </li>
+            </ul>
+         </div>
+         
+         <div class="page show" id="page">
+
+            <form action="log.php" method="post" class="page-content" name="LoginForm" onsubmit="return validate()">
+               <div class="imgcontainer">
+                   <img src="3CM online logo.png"  class="full-logo">
+                 </div>
+             
+                 <div class="container show " id="Log">
+                   <label for="username"><b>Username</b></label>
+                   <input class="field" name="username" type="text" id="userName" onfocus="FocusUser()"  placeholder="Enter Username">
+             
+                   <label for="password"><b>Password</b></label>
+                   <input class="field" name="password" type="password" id="password" onfocus="FocusPass()" placeholder="Enter Password">
+                     
+                   <button type="submit" class="submitBtn" id="btn">Login</button>
+                 </div>
+
+                 <!-- <div class="container hide" id="Sign">
+                   <label for="username1"><b>Username</b></label>
+                   <input class="field" name="userName1" type="text" id="userName1" onfocus="FocusUser()"  placeholder="Enter Username">
+                  
+                   <label for="Email1"><b>Email Id</b></label>
+                   <input class="field" name="Email1" type="text" id="Email1" onfocus="FocusUser()"  placeholder="Enter Email Id">
+             
+                   <label for="password1"><b>Password</b></label>
+                   <input class="field" name="password1" type="password" id="password1" onfocus="FocusPass()" placeholder="Enter Password">
+                     
+                   <button type="submit" class="submitBtn" id="btn" >Signin</button>
+                 </div> -->
+             
+                 <div class="container" style="background-color:#f1f1f1">
+                   <button type="button" class="cancelbtn" id="close-btn">Cancel</button>
+                   <span class="link show" id="LogLink" onclick="openSign()" ><a href="#">Create new user</a></span>
+                   <span class="link hide" id="SignLink" onclick="openLog()" ><a href="#">Already have a user?</a></span>
+                 </div>
+            </form>
+            
+         </div>  
+
+    </body>
+</html>
