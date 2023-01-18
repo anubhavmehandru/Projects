@@ -1,0 +1,34 @@
+body{margin: 0% ; padding: 0%; font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+/* .loading-pg {      background-color: #f8f8f8;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;}
+.animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;}
+.zoomIn, .zoomin {
+        animation-name: ob;}
+.slideOutRight {
+        animation-name: Eb;}
+
+img {width: 34%;   
+    position: relative;
+    top: 50%;
+    transform: translateY(25%);
+} */
+
+
+.content-box {    background-image: linear-gradient(rgb(0 0 0 / 15%) , rgb(0 0 0 / 25%) ) ,url(home.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 100vh;              
+}
+.menu { display: inline-flex;}
+.menu img {
+        height: 30vh;
+    margin: 20px 0 0 80px;
+    cursor: pointer;
+}

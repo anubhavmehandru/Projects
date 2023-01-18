@@ -1,0 +1,5 @@
+PE ID - 1201162667665270193
+Template ID - 1207162825645881272
+Header(s) - ThreCM
+Template Content -
+{#var#} {#var#} against Job no {#var#} is ready after {#var#}. Authentication OTP {#var#}. Share OTP with 3CM Service only. 

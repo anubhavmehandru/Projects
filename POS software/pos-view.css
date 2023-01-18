@@ -1,0 +1,27 @@
+* {margin: 0px ; padding: 0px;}
+body {background: white;}
+
+/* Header Menu */
+.top-nav {background: #142738; width: 100%; height: 40px; color: white; font-family: "Arial Narrow", Arial, sans-serif;
+         font-size: large; line-height: 40px; }
+
+h2 {width: fit-content; float: left; padding-left: 15px;}
+
+.top-nav-menu { color: white; float: right;  display: block; margin: 0px; padding: 0px; cursor: pointer; }
+.top-nav-menu li { list-style: none; text-align: center; display: inline-block; width: 100px; justify-content: center; align-content: center;}
+.top-nav-menu li:hover {background: #081521}
+
+/* Main Body */
+.split-body {width: 100%; height: calc(100% - 40px); background: aliceblue; display: flex; }
+
+   /* Left Div */
+ .left-div { flex: 35%; background: white; padding: 10px;}
+
+   /* Right Div */
+.right-div { flex: 61%; padding: 10px;}
+
+
+@media screen and (max-width: 700px) {
+    .top-nav {font-size: medium;}
+    .top-nav-menu li {color: black; display: block; position: relative; top: 41px; background: whitesmoke; padding: 10px;}}
+  

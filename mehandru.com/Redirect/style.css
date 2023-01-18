@@ -1,0 +1,26 @@
+body {background-color: #d3d3d3;}
+
+img {        height: auto;
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  
+  a:hover, a:active {
+    background-color: red;
+  }
+
+.links {text-align: center;}
